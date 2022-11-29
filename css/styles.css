@@ -1,15 +1,18 @@
 /* general styles */
 :root {
     --text-color-general: #434455;
+    --secondary-accent-color:#F4F4FD ;
     --text-color-for-headers: #2E2F42;
+    --text-color-for-headers-on-dark-background: #ffffff;
     --primary-background-color:#ffffff ;
+    --dark-background-color:#2E2F42;
     --secondary-background-color:#F4F4FD;
     --primary-button-style:#4D5AE5;
     --primary-button-text: #ffffff;
     --secondary-button-style: #ffffff;
     --secondary-button-text:#4D5AE5;
     --accent-color: #4D5AE5;
-
+    --text-color-general-on-dark-background: #E7E9FC;
 }
 
 body {
@@ -32,22 +35,27 @@ ul {
 
 a {
     text-decoration-line: none;
-   }
+}
+
+.hidden-heading {
+    visibility: hidden;
+}
 
 /* header */
     /* logo */
-.logo {
+.logo,
+.logo-white {
     font-family: Raleway, sans-serif ;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: var(--text-color-for-headers);
-    
+
+    color: var(--accent-color);
 }
 
 .logo span {
-    color: var(--accent-color);
+    color: var(--text-color-for-headers);
 }
 
     /* site nav */
@@ -68,7 +76,7 @@ a {
 .site-nav .link:focus {
     font-weight: 600;
 
-    color: var(--accent-color);
+    color: var(--text-color-general);
 }
 
 .site-nav .link.current {
@@ -88,13 +96,82 @@ a {
     color: var(--accent-color)
 }
 
-/* main-studio */
+    /* main-studio */
+
+    /* hero */
+.hero {
+    background-color: var(--dark-background-color) ;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+
+    color: var(--text-color-for-headers-on-dark-background);
+}
+
+.primary-button {
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--primary-button-text);
+    background-color: var(--primary-button-style)
+}
+    
+.primary-button:hover,
+.primary-button:focus {
+    color: var(--secondary-button-text);
+    background-color: var(--secondary-button-style);
+}
+
+    /* motto (hidden h2)*/
+
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--text-color-for-headers);
+}
+
+    /* what we are doing (work) */
+
+.heading {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+
+    color: var(--text-color-for-headers);
+}
+
+    /* our team */
+
+.section-team {
+        background-color: var(--secondary-background-color);
+    }
+/* .heading is in "what we a doing" 
+.section-title is in "motto (hidden h2)*/
 
 
-/* main-portfolio */
+
+
+
+
+/* main-portfolio (hidden h2)*/
+
     /*  radio-buttons */
 
 .portfolio-button {
+    cursor: pointer;
+
+    font-family: inherit;
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.04em;
@@ -105,10 +182,6 @@ a {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 0.04em;
-
     color: var(--primary-button-text);
     background-color: var(--primary-button-style)
 }
@@ -126,4 +199,21 @@ a {
 
     color: var(--text-color-for-headers)
 }
+
+/* footer */
+
+.footer {
+    background-color: var(--dark-background-color) ;
+}
+
+/* .logo-white is in a "header" */
+.logo-white span {
+    color: var(--secondary-accent-color);
+}
+
+.white-text {
+    color: var(--text-color-general-on-dark-background);
+}
+
+
 
