@@ -1,6 +1,89 @@
-
-
-/* header */
-.header {
+/* general styles */
+:root {
+    --primary-text-color: #000000;
+    --primary-background-color:#ffffff ;
+    --secondary-background-color:#18a0fb;
+    --primary-button-style:#18a0fb;
+    --secondary-button-style: #ffffff ;
+    --accent-color: #18a0fb;
 
 }
+
+body {
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+
+    font-family: Roboto, serif-sans;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+/* header */
+    /* logo */
+.logo {
+    font-family: ;
+    color: var(--primary-text-color);
+    
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+    /* site nav and autorization nav */
+
+.site-nav {
+    color: var(--primary-text-color);
+    background-color: ;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auto-nav .link {
+    color: var(--primary-text-color)
+}
+
+.auto-nav .link:hover,
+.auto-nav .link:focus {
+    color: var(--accent-color)
+}
+
+/* main-studio */
+
+
+/* main-portfolio */
+    /*  radio-buttons */
+
+.portfolio-button {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-button-style)
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-text-color);
+    background-color: var(--primary-button-style)
+}
+
+    /* portfolio-elements */
+.portfolio-element {
+
+}
+
+.portfolio-element .title {
+
+}
+
