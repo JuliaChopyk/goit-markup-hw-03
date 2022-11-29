@@ -1,20 +1,29 @@
 /* general styles */
 :root {
-    --primary-text-color: #000000;
+    --text-color-general: #434455;
+    --text-color-for-headers: #2E2F42;
     --primary-background-color:#ffffff ;
-    --secondary-background-color:#18a0fb;
-    --primary-button-style:#18a0fb;
-    --secondary-button-style: #ffffff ;
-    --accent-color: #18a0fb;
+    --secondary-background-color:#F4F4FD;
+    --primary-button-style:#4D5AE5;
+    --primary-button-text: #ffffff;
+    --secondary-button-style: #ffffff;
+    --secondary-button-text:#4D5AE5;
+    --accent-color: #4D5AE5;
 
 }
 
 body {
 
-    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-general);
     background-color: var(--primary-background-color);
 
-    font-family: Roboto, serif-sans;
 }
 
 ul {
@@ -23,12 +32,17 @@ ul {
 
 a {
     text-decoration-line: none;
-}
+   }
+
 /* header */
     /* logo */
 .logo {
-    font-family: ;
-    color: var(--primary-text-color);
+    font-family: Raleway, sans-serif ;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--text-color-for-headers);
     
 }
 
@@ -36,26 +50,39 @@ a {
     color: var(--accent-color);
 }
 
-    /* site nav and autorization nav */
+    /* site nav */
 
-.site-nav {
-    color: var(--primary-text-color);
-    background-color: ;
+.site-nav .link {
+    font-weight: 600;
+
+    color: var(--text-color-for-headers)
+}
+
+.site-nav .link:visited {
+    font-weight: 600;
+
+    color: var(--text-color-for-headers)
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+    font-weight: 600;
+
     color: var(--accent-color);
 }
 
 .site-nav .link.current {
+    font-weight: 600;
+
     color: var(--accent-color);
 }
-
+    /* autorization nav  */
 .auto-nav .link {
-    color: var(--primary-text-color)
+    color: var(--text-color-general)
 }
-
+.auto-nav .link:visited {
+    color: var(--text-color-general)
+}
 .auto-nav .link:hover,
 .auto-nav .link:focus {
     color: var(--accent-color)
@@ -68,22 +95,35 @@ a {
     /*  radio-buttons */
 
 .portfolio-button {
-    color: var(--primary-text-color);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--secondary-button-text);
     background-color: var(--secondary-button-style)
 }
 
-.button:hover,
-.button:focus {
-    color: var(--primary-text-color);
+.portfolio-button:hover,
+.portfolio-button:focus {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--primary-button-text);
     background-color: var(--primary-button-style)
 }
 
     /* portfolio-elements */
-.portfolio-element {
 
+.portfolio-element {
+    color: var(--text-color-general)
 }
 
 .portfolio-element .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2px;
 
+    color: var(--text-color-for-headers)
 }
 
