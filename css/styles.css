@@ -9,7 +9,7 @@
     --secondary-background-color:#F4F4FD;
     --primary-button-style:#4D5AE5;
     --primary-button-text: #ffffff;
-    --secondary-button-style: #ffffff;
+    --secondary-button-style: #F4F4FD;
     --secondary-button-text:#4D5AE5;
     --accent-color: #4D5AE5;
     --text-color-general-on-dark-background: #E7E9FC;
@@ -35,8 +35,17 @@ a {
     text-decoration-line: none;
 }
 
-.hidden-heading {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* header */
@@ -59,26 +68,26 @@ a {
     /* site nav */
 
 .site-nav .link {
-    font-weight: 600;
+    font-weight: 500;
 
     color: var(--text-color-for-headers)
 }
 
 .site-nav .link:visited {
-    font-weight: 600;
+    font-weight: 500;
 
     color: var(--text-color-for-headers)
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    font-weight: 600;
+    font-weight: 500;
 
     color: var(--text-color-general);
 }
 
 .site-nav .link.current {
-    font-weight: 600;
+    font-weight: 500;
 
     color: var(--accent-color);
 }
@@ -102,7 +111,7 @@ a {
 }
 
 .hero-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -114,7 +123,9 @@ a {
     cursor: pointer;
 
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
 
@@ -131,7 +142,7 @@ a {
     /* motto (hidden h2)*/
 
 .section-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 
@@ -141,7 +152,7 @@ a {
     /* what we are doing (work) */
 
 .heading {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -152,8 +163,12 @@ a {
     /* our team */
 
 .section-team {
-        background-color: var(--secondary-background-color);
+    background-color: var(--secondary-background-color);
     }
+
+.team-member {
+    background-color: var(--primary-background-color);
+}
 /* .heading is in "what we a doing" 
 .section-title is in "motto (hidden h2)*/
 
@@ -170,7 +185,9 @@ a {
     cursor: pointer;
 
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
 
@@ -191,9 +208,9 @@ a {
 }
 
 .portfolio-element .title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 1.2px;
+    line-height: 1.2;
 
     color: var(--text-color-for-headers)
 }
