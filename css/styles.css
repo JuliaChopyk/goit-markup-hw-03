@@ -1,4 +1,13 @@
 /* general styles */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
     --text-color-general: #434455;
     --secondary-accent-color:#F4F4FD ;
@@ -16,7 +25,6 @@
 }
 
 body {
-
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -46,6 +54,16 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+h1, h2, h3, p, a, ul {
+    margin: 0px;
+}
+
+.container {
+width: 1152px;
+margin: 0 auto;
+padding: 0 12px;
 }
 
 /* header */
@@ -120,12 +138,17 @@ a {
 }
 
 .primary-button {
+    display: inline-block;
+    padding: 16px 32px;
+    border: transparent;
+    border-radius: 4px;
+
     cursor: pointer;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.04em;
 
@@ -135,8 +158,12 @@ a {
     
 .primary-button:hover,
 .primary-button:focus {
+    padding: 15px 31px;
+    border: 1px solid var(--text-color-general-on-dark-background);
+
     color: var(--secondary-button-text);
     background-color: var(--secondary-button-style);
+    
 }
 
     /* motto (hidden h2)*/
@@ -182,6 +209,11 @@ a {
     /*  radio-buttons */
 
 .portfolio-button {
+    display: inline-block;
+    padding: 11px 23px;
+    border: 1px solid var(--text-color-general-on-dark-background);
+    border-radius: 4px;
+
     cursor: pointer;
 
     font-family: inherit;
@@ -197,6 +229,10 @@ a {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
+    padding: 12px 24px;
+    border: transparent;
+
+
     color: var(--primary-button-text);
     background-color: var(--primary-button-style)
 }
